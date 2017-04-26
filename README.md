@@ -1,5 +1,5 @@
-# Shedule editor
-Guideline for students for creating an ajax shedule editor using Node.js
+# News blog
+Guideline for students for creating an ajax news blog using Node.js
 
 # node version:
 7.9.0
