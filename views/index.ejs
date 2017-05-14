@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News blog</title>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+  </script>
+  <link href="/assets/styles.css" rel="stylesheet" type="text/css" >
+  <!--Обов'язково треба підключити обробник ajax запитів-->
+  <script src="/assets/newslist.js"></script>
+</head>
+
+<body>
+  <h1>Welcome to AJAX news blog!</h1>
+  <div id="news-table">
+    <form>
+      <input type="text" name="item" placeholder="Add some text" required >
+      <button type="submit">Add new post</button>
+    </form>
+    <ul>
+    <% for (var i = 0; i < articles.length; i++) { %>
+       <li><%=articles[i].item %></li>
+    <% } %>
+    </ul>
+  </div>
+</body>
+
+</html>
